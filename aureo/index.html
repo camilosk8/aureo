@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áureo Restaurante</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Áureo</div>
+        <nav>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio">
+        <h2>Gastronomía que despierta los sentidos</h2>
+        <p>Descubre la fusión perfecta entre tradición e innovación.</p>
+        <a href="#reservas" class="btn">Reserva Ahora</a>
+    </section>
+
+    <section id="menu">
+        <h2>Una carta creada para sorprenderte</h2>
+        <ul>
+            <li><strong>Caviar Áureo</strong> – Huevas de esturión con espuma de trufa y oro comestible.</li>
+            <li><strong>Filete Imperial</strong> – Solomillo madurado con puré de tubérculos y salsa bordalesa.</li>
+            <li><strong>Postre Espejismo</strong> – Esfera de chocolate rellena de frutos rojos y mousse de caramelo.</li>
+        </ul>
+    </section>
+
+    <section id="experiencia">
+        <h2>Mucho más que una cena, un espectáculo gastronómico</h2>
+        <p>Ambiente íntimo, atención personalizada y cocina en vivo.</p>
+    </section>
+
+    <section id="reservas">
+        <h2>Tu mesa te espera</h2>
+        <p>Reserva tu lugar y vive la experiencia Áureo.</p>
+        <a href="#" class="btn">Reservar Ahora</a>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>📍 Calle 123, Zona Exclusiva, Ciudad</p>
+        <p>📞 123-456-789</p>
+        <p>📩 contacto@aureorestaurante.com</p>
+    </section>
+    <section id="inicio" class="hero">
+        <h1>Gastronomía que despierta los sentidos</h1>
+        <p>Una experiencia culinaria que fusiona tradición e innovación.</p>
+        <a href="#reservas" class="btn">Reserva Ahora</a>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Nuestro Menú</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="plato1.jpg" alt="Plato 1">
+                <h3>Plato de autor</h3>
+                <p>Descripción breve del plato.</p>
+            </div>
+            <div class="menu-item">
+                <img src="plato2.jpg" alt="Plato 2">
+                <h3>Plato especial</h3>
+                <p>Descripción breve del plato.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="experiencia">
+        <h2>Vive la Experiencia Áureo</h2>
+        <p>Un espacio donde la alta cocina y la exclusividad se unen.</p>
+    </section>
+
+    <section id="reservas" class="reservas">
+        <h2>Haz tu Reserva</h2>
+        <a href="#" class="btn">Reservar Ahora</a>
+    </section>
+
+    <footer id="contacto">
+        <p>Áureo Restaurante - Calle 123, Ciudad | Tel: 123-456-789</p>
+    </footer>
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".nav-links").classList.toggle("show");
+        });
+    </script>
+
+</body>
+
+</html>
