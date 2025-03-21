@@ -9,170 +9,210 @@ html {
 *:after {
     box-sizing: inherit;
 }
+/* Reset básico */
 
 
-/* Estilos Generales */
-
+/* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #111;
-    color: #fff;
-    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #000;
+    color: #ff8945;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-/* Header */
-
+/* Encabezado */
 header {
+    
+    background-color: #111;
+    color: #ff8945;
+    width: 100%;
+    height: 120px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    background: #000;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: gold;
-}
-
-nav .menu-toggle {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.nav-links {
-    list-style: none;
-    padding: 0;
-    display: none;
-    flex-direction: column;
-    background: black;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-}
-
-.nav-links.show {
-    display: flex;
-}
-
-.nav-links li {
-    padding: 15px 0;
-}
-
-.nav-links a {
-    color: gold;
-    text-decoration: none;
-}
-
-
-/* Hero */
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
     align-items: center;
-    height: 90vh;
-    background: url('hero.jpg') center/cover no-repeat;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background: url("../img/entrada.webp") center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 20px;
+    width: 100%;
 }
 
 .hero h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 2rem;
 }
 
-.hero .btn {
-    background: gold;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
-
-/* Menú */
-
-.menu {
+/* Secciones */
+.section {
     padding: 40px 20px;
+    text-align: center;
+    width: 100%;
 }
 
-.menu-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+/* Restaurantes */
+.locations {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+    align-items: center;
+}
+
+.location {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 300px;
+    box-shadow: 2px 2px 10px rgba(255, 204, 0, 0.2);
+}
+
+/* Carta */
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(255, 204, 0, 0.2);
 }
 
 .menu-item img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 8px;
 }
-
-
-/* Experiencia */
-
-.experiencia {
-    padding: 40px 20px;
-    background: #222;
-}
-
 
 /* Reservas */
-
-.reservas {
-    padding: 40px 20px;
-    background: gold;
-    color: black;
-}
-
-.reservas .btn {
-    background: black;
-    color: gold;
+.btn {
+    display: inline-block;
     padding: 10px 20px;
+    background: #ff8945;
+    color: black;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s;
 }
 
+.btn:hover {
+    background: white;
+}
+
+/* Galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Estilos de cada imagen */
+.gallery-item {
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(255, 204, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Efecto hover */
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Contacto */
+#contacto p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
 
 /* Footer */
-
 footer {
-    background: black;
-    padding: 10px;
-    font-size: 14px;
+    background-color: #111;
+    color: #ff8945;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
 }
 
+footer a {
+    color: #ff8945;
+    text-decoration: none;
+}
 
-/* Responsivo */
+footer a:hover {
+    text-decoration: underline;
+}
 
+/* Responsive - Pantallas más grandes */
 @media (min-width: 768px) {
-    .nav-links {
-        display: flex;
+    .hero {
+        height: 400px;
+    }
+
+    .locations {
         flex-direction: row;
-        position: static;
-        background: none;
-        width: auto;
+        justify-content: center;
     }
-    .nav-links li {
-        padding: 0 15px;
-    }
-    .menu-toggle {
-        display: none;
-    }
-    .menu-grid {
-        grid-template-columns: repeat(2, 1fr);
+
+    .menu-list {
+        flex-direction: row;
     }
 }

@@ -1,103 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Áureo Restaurante</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Storia D'Amore - Auténtica Cocina Italiana</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
+    <!-- Encabezado -->
     <header>
-        <div class="logo">Áureo</div>
+        <div class="logo">Storia <br>D'Amore</div>
         <nav>
-            <button class="menu-toggle">☰</button>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#menu">Menú</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#reservas">Reservas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+            <a href="#restaurantes">Restaurantes</a>
+            <a href="#cartas">Cartas</a>
+            <a href="#reservas">Reservas</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
-    <section id="inicio">
-        <h2>Gastronomía que despierta los sentidos</h2>
-        <p>Descubre la fusión perfecta entre tradición e innovación.</p>
-        <a href="#reservas" class="btn">Reserva Ahora</a>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Descubre la auténtica cocina italiana</h1>
+        <p>Un pedazo de Italia en cada plato</p>
     </section>
 
-    <section id="menu">
-        <h2>Una carta creada para sorprenderte</h2>
-        <ul>
-            <li><strong>Caviar Áureo</strong> – Huevas de esturión con espuma de trufa y oro comestible.</li>
-            <li><strong>Filete Imperial</strong> – Solomillo madurado con puré de tubérculos y salsa bordalesa.</li>
-            <li><strong>Postre Espejismo</strong> – Esfera de chocolate rellena de frutos rojos y mousse de caramelo.</li>
-        </ul>
-    </section>
-
-    <section id="experiencia">
-        <h2>Mucho más que una cena, un espectáculo gastronómico</h2>
-        <p>Ambiente íntimo, atención personalizada y cocina en vivo.</p>
-    </section>
-
-    <section id="reservas">
-        <h2>Tu mesa te espera</h2>
-        <p>Reserva tu lugar y vive la experiencia Áureo.</p>
-        <a href="#" class="btn">Reservar Ahora</a>
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>📍 Calle 123, Zona Exclusiva, Ciudad</p>
-        <p>📞 123-456-789</p>
-        <p>📩 contacto@aureorestaurante.com</p>
-    </section>
-    <section id="inicio" class="hero">
-        <h1>Gastronomía que despierta los sentidos</h1>
-        <p>Una experiencia culinaria que fusiona tradición e innovación.</p>
-        <a href="#reservas" class="btn">Reserva Ahora</a>
-    </section>
-
-    <section id="menu" class="menu">
-        <h2>Nuestro Menú</h2>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="plato1.jpg" alt="Plato 1">
-                <h3>Plato de autor</h3>
-                <p>Descripción breve del plato.</p>
+    <!-- Restaurantes -->
+    <section id="restaurantes" class="section">
+        <h2>Nuestras Sedes</h2>
+        <div class="locations">
+            <div class="location">
+                <h3>Piazza Italia</h3>
+                <p>Un espacio vibrante para disfrutar la mejor comida italiana.</p>
             </div>
-            <div class="menu-item">
-                <img src="plato2.jpg" alt="Plato 2">
-                <h3>Plato especial</h3>
-                <p>Descripción breve del plato.</p>
+            <div class="location">
+                <h3>Calle 122</h3>
+                <p>El lugar perfecto para probar nuestro cremoso gelato y exquisitas pastas.</p>
             </div>
         </div>
     </section>
 
-    <section id="experiencia" class="experiencia">
-        <h2>Vive la Experiencia Áureo</h2>
-        <p>Un espacio donde la alta cocina y la exclusividad se unen.</p>
+    <!-- Carta -->
+    <section id="cartas" class="section">
+        <h2>Nuestra Carta</h2>
+        <div class="menu-list">
+            <div class="menu-item">
+                <img src="img/pasta.webp" alt="Pasta">
+                <p>Pastas artesanales con ingredientes frescos.</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/img-3.webp" alt="Pizza">
+                <p>Pizzas con masa de larga fermentación y sabores auténticos.</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/gelato.webp" alt="Gelato">
+                <p>Gelato cremoso y refrescante con auténticos sabores italianos.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="reservas" class="reservas">
-        <h2>Haz tu Reserva</h2>
-        <a href="#" class="btn">Reservar Ahora</a>
+    <!-- Reservas -->
+    <section id="reservas" class="section">
+        <h2>Reserva tu Mesa</h2>
+        <p>Disfruta de la mejor experiencia gastronómica en cualquiera de nuestras sedes.</p>
+        <a href="#" class="btn">Reserva Aquí</a>
+    </section>
+    <section class="gallery">
+        <div class="gallery-item"><img src="img/img-1.webp" alt="Imagen 1"></div>
+        <div class="gallery-item"><img src="img/img-2.webp" alt="Imagen 2"></div>
+        <div class="gallery-item"><img src="img/img-3.webp" alt="Imagen 3"></div>
+        <div class="gallery-item"><img src="img/img-4.webp" alt="Imagen 4"></div>
+        <div class="gallery-item"><img src="img/img-5.webp" alt="Imagen 5"></div>
     </section>
 
-    <footer id="contacto">
-        <p>Áureo Restaurante - Calle 123, Ciudad | Tel: 123-456-789</p>
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <p>📍 Cl. 122 #15a-24 | 📞 300 913 4441</p>
+        <p>📧 contacto@storiadamore.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Storia D'Amore | Síguenos en: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Tripadvisor</a>
+        </p>
     </footer>
 
-    <script>
-        document.querySelector(".menu-toggle").addEventListener("click", function() {
-            document.querySelector(".nav-links").classList.toggle("show");
-        });
-    </script>
-
 </body>
-
 </html>
