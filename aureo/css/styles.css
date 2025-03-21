@@ -15,8 +15,8 @@ html {
 /* Estilos generales */
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #000;
-    color: #ff8945;
+    background-color: #c0c0c0;
+    color: #3a3a3a;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -26,8 +26,8 @@ body {
 /* Encabezado */
 header {
     
-    background-color: #111;
-    color: #ff8945;
+    background-color: #3a3a3a;
+    color: #252525;
     width: 100%;
     height: 120px;
     padding: 15px 20px;
@@ -66,7 +66,7 @@ nav a:hover {
 /* Hero Section */
 .hero {
     background: url("../img/entrada.webp") center/cover no-repeat;
-    height: 300px;
+    height: 00px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,7 +162,7 @@ nav a:hover {
     max-width: 300px;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(255, 204, 0, 0.2);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
 }
 
